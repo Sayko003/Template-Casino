@@ -36,18 +36,27 @@
 	transition: all 0.2s ease-in;
 }
 
-.title--slide{
+.menu--link:hover{
+	color: var(--accent);
+	text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.title--slider{
 	font-family: var(--font-family);
 	font-weight: 700;
 	font-size: 48px;
 	color: var(--white);
+
+	margin-bottom: 16px;
 }
 
-.subtitle--slide{
+.subtitle--slider{
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 24px;
 	color: var(--white);
+
+	margin-bottom: 30px;
 }
 //Кнопки
 .btn--main-color{
@@ -83,6 +92,19 @@
 
 	transition: all 0.2s ease-in;
 }
+
+.btn--main-color:hover{
+	color: var(--accent);
+	background-color: transparent;
+	border-color: var(--accent);
+}
+
+.btn--main-transparent:hover{
+	color: var(--white);
+	background-color: var(--accent);
+	border-color: transparent;
+}
+
 //Социальные иконки
 .social {
     max-width: 248px;
@@ -111,22 +133,4 @@
 }
 
 
-
-//Ховеры и анимация
-.menu--link:hover{
-	color: var(--accent);
-	text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.btn--main-color:hover{
-	color: var(--accent);
-	background-color: transparent;
-	border-color: var(--accent);
-}
-
-.btn--main-transparent:hover{
-	color: var(--white);
-	background-color: var(--accent);
-	border-color: transparent;
-}
 

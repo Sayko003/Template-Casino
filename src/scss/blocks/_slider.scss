@@ -1,0 +1,51 @@
+.slider{
+    padding-top: 99px;
+}
+.swiper--main {
+    max-width: 100%;
+}
+.slider--block {
+    position: relative;
+
+    background-image: url('../../img/block/sliders/slider-1.jpg');
+    background-color: rgba(0,0,0, 0.7);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+.swiper .container{
+    padding: 80px 0 117px 0;
+}
+//Изображения для слайдера
+.slider--block--img-1{
+    background-image: url('../../img/block/sliders/slider-1.jpg');
+}
+.slider--block--img-2{
+    background-image: url('../../img/block/sliders/slider-2.jpg');
+}
+.slider--block--img-3{
+    background-image: url('../../img/block/sliders/slider-3.jpg');
+}
+.slider--block--img-4{
+    background-image: url('../../img/block/sliders/slider-4.jpg');
+}
+.btn--slider {
+    display: flex;
+    align-items:center;
+    column-gap: 30px;
+}
+.swiper-pagination{
+    bottom: 33px !important;
+}
+.swiper-pagination-bullet{
+    border: 2px solid var(--accent);
+    background-color: transparent !important;
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--accent)!important;
+}

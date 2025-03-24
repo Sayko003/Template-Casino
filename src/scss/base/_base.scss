@@ -4,6 +4,8 @@ html {
 }
 
 body {
+	position: relative;
+
 	background-color: var(--page-bg);
 	color: var(--text-color);
 	font-family: var(--font-main);

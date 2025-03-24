@@ -33,6 +33,7 @@
 		"npm": "^9.9.3",
 		"sass": "^1.63.4",
 		"style-loader": "^3.3.3",
+		"swiper": "^11.2.6",
 		"webpack-stream": "^7.0.0"
 	},
 	"babel": {

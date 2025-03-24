@@ -1,15 +1,15 @@
 @font-face {
 	font-family: TeXGyreHeros;
 	font-display: swap;
-	src: url("../fonts/TeXGyreHeros-BoldItalic.woff2") format("woff2"), url("../fonts/TeXGyreHeros-BoldItalic.woff") format("woff");
-	font-weight: 400;
+	src: url("../fonts/TeXGyreHeros-Bold.woff2") format("woff2"), url("../fonts/TeXGyreHeros-Bold.woff") format("woff");
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: TeXGyreHeros;
 	font-display: swap;
-	src: url("../fonts/TeXGyreHeros-Bold.woff2") format("woff2"), url("../fonts/TeXGyreHeros-Bold.woff") format("woff");
-	font-weight: 700;
+	src: url("../fonts/TeXGyreHeros-BoldItalic.woff2") format("woff2"), url("../fonts/TeXGyreHeros-BoldItalic.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
@@ -43,14 +43,14 @@
 @font-face {
 	font-family: TeXGyreHerosCondensed;
 	font-display: swap;
-	src: url("../fonts/TeXGyreHerosCondensed-Regular.woff2") format("woff2"), url("../fonts/TeXGyreHerosCondensed-Regular.woff") format("woff");
+	src: url("../fonts/TeXGyreHerosCondensed-Italic.woff2") format("woff2"), url("../fonts/TeXGyreHerosCondensed-Italic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: TeXGyreHerosCondensed;
 	font-display: swap;
-	src: url("../fonts/TeXGyreHerosCondensed-Italic.woff2") format("woff2"), url("../fonts/TeXGyreHerosCondensed-Italic.woff") format("woff");
+	src: url("../fonts/TeXGyreHerosCondensed-Regular.woff2") format("woff2"), url("../fonts/TeXGyreHerosCondensed-Regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
