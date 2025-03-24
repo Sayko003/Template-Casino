@@ -1,0 +1,92 @@
+.best-games{
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.best-games .container{
+    overflow: hidden;
+}
+.best-games--block{
+    position: relative;
+
+    padding: 35px 30px 25px 30px;
+    background-color: var(--background-block);
+    border-radius: 15px;
+}
+.best-games--title{
+    margin-bottom: 35px;
+}
+.best-games--swiper{
+    margin-bottom: 28px;
+
+    overflow: hidden;
+}
+.best-games .swiper-slide, .best-games .swiper-slide-active {
+    max-width: 150px;
+}
+.best-games--swiper .swiper-slide a{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+
+.best-games--link {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 10px;
+}
+.best-games--text {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+
+    transition: all 0.2s ease-in;
+}
+
+.best-games--link .icon--arrow-right {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-color);
+
+    transition: all 0.2s ease-in;
+}
+
+.best-games--link:hover{
+    .best-games--text{
+        color: var(--accent);
+    }
+    .icon--arrow-right{
+        fill: var(--accent);
+    }
+}
+.best-games--sub{
+    display: flex;
+    align-items: baseline;
+    column-gap: 34px;
+}
+.best-games--arrow{
+    max-width: 85px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.best-games--prev, .best-games--next{
+    cursor: pointer;
+}
+.icon--double-arrow{
+    fill: var(--title-2);
+    width: 25px;
+    height: 29px;
+
+    transition: all 0.2s ease-in;
+}
+
+.icon--double-arrow:hover{
+    fill: var(--title-1);
+}
+.icon--double-rotate{
+    transform: rotate(180deg);
+}

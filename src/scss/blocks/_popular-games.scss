@@ -1,0 +1,12 @@
+.popular-games{
+    padding: 40px 0;
+}
+
+.popular-games .news-games--btn::before{
+    content: url('../../img/svg-nosprite/slot.svg');
+    position: absolute;
+    top:11px;
+    left:25px;
+    width: 25px;
+    height: 27px;
+}
