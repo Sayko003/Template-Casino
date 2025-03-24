@@ -66,16 +66,16 @@ gulp.task('html:dev', function () {
 				'$1./$4$5$7$1'
 			)
 		)
-		.pipe(
-			typograf({
-				locale: ['ru', 'en-US'],
-				htmlEntity: { type: 'digit' },
-				safeTags: [
-					['<\\?php', '\\?>'],
-					['<no-typography>', '</no-typography>'],
-				],
-			})
-		)
+		// .pipe(
+		// 	typograf({
+		// 		locale: ['ru', 'en-US'],
+		// 		htmlEntity: { type: 'digit' },
+		// 		safeTags: [
+		// 			['<\\?php', '\\?>'],
+		// 			['<no-typography>', '</no-typography>'],
+		// 		],
+		// 	})
+		// )
 		.pipe(
 			webpHTML({
 				extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
@@ -85,15 +85,15 @@ gulp.task('html:dev', function () {
 				},
 			})
 		)
-		.pipe(
-			prettier({
-				tabWidth: 4,
-				useTabs: true,
-				printWidth: 182,
-				trailingComma: 'es5',
-				bracketSpacing: false,
-			})
-		)
+		// .pipe(
+		// 	prettier({
+		// 		tabWidth: 4,
+		// 		useTabs: true,
+		// 		printWidth: 182,
+		// 		trailingComma: 'es5',
+		// 		bracketSpacing: false,
+		// 	})
+		// )
 		.pipe(gulp.dest('./build/'));
 });
 
