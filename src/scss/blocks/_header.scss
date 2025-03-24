@@ -1,0 +1,31 @@
+.header{
+    padding: 15px 0;
+    background-color: var(--background-block);
+}
+
+.header--container{
+    margin: 0 auto;
+    max-width: 1728px;
+    width: 100%;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header--logo {
+    display: inline-block;
+    max-width: 101px;
+}
+
+.header ul{
+    display: flex;
+    column-gap: 40px;
+}
+
+.header--btn{
+    display: flex;
+    column-gap: 15px;
+}

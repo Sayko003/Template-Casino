@@ -1,0 +1,132 @@
+//Заголовоки и текст
+.title--1 {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 48px;
+	color: var(--title-1)
+}
+
+.title--2 {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 36px;
+	color: var(--title-2);
+}
+
+.title--3 {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--title-3);
+}
+
+.main--text{
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--text-color);
+}
+
+.menu--link{
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--white);
+
+	transition: all 0.2s ease-in;
+}
+
+.title--slide{
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 48px;
+	color: var(--white);
+}
+
+.subtitle--slide{
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 24px;
+	color: var(--white);
+}
+//Кнопки
+.btn--main-color{
+	display: inline-block;
+
+	padding: 10px 35px;
+
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--white);
+
+	border: 2px solid transparent;
+	border-radius: 15px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	background: var(--accent);
+
+	transition: all 0.2s ease-in;
+}
+
+.btn--main-transparent{
+	display: inline-block;
+
+	padding: 10px 35px;
+
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--accent);
+
+	border: 2px solid var(--accent);
+	border-radius: 15px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	background: transparent;
+
+	transition: all 0.2s ease-in;
+}
+//Социальные иконки
+.social {
+    max-width: 248px;
+	max-height: 32px;
+    width: 100%;
+}
+
+.social--svg{
+    width: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social--svg a{
+    opacity: 1;
+	transition: opacity 0.2s ease-in;
+}
+.social--svg a:hover{
+    opacity: 0.5;
+}
+
+.social--link {
+    display: inline-block;
+}
+
+
+
+//Ховеры и анимация
+.menu--link:hover{
+	color: var(--accent);
+	text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn--main-color:hover{
+	color: var(--accent);
+	background-color: transparent;
+	border-color: var(--accent);
+}
+
+.btn--main-transparent:hover{
+	color: var(--white);
+	background-color: var(--accent);
+	border-color: transparent;
+}
+

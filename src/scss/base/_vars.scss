@@ -1,17 +1,25 @@
 :root {
+	//Ширина Контейнера
 	--container-width: 1230px;
 	--container-padding: 15px;
 
-	--font-main: sans-serif;
-	--font-accent: 'Manrope', sans-serif;
-	--font-titles: var(--font-accent);
+	//Используемые шрифты
+	--font-main: 'TeXGyreHeros',sans-serif;
+	--font-titles: var(--font-main);
 
-	--page-bg: #fff;
-	--text-color: #000;
-	--accent: #ac182c;
-	--link-color: #2578c8;
+	//Используемые цвета
+	--page-bg: #0b0c10;
+	--background-block: #1f2833;
+	--title-1:#66fcf1;
+	--title-2: #45a29e;
+	--text-color:#c5c6c7;
+	--number: #1da49a;
+	--data: #1d7a73;
+	--accent: #45a29e;
+	--link-color: #45a29e;
+	--white: #fff;
 
-
+	//Переменные для адаптива
     --laptop-size: 1199px;
 	--tablet-size: 959px;
 	--mobile-size: 599px;
