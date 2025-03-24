@@ -1,0 +1,86 @@
+.info {
+    padding-top: 40px;
+}
+.info--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.info--block {
+    padding: 20px 20px 24px 20px;
+    max-width: 270px;
+    max-height: 100px;
+    width: 100%;
+    background: var(--background-block);
+    border-radius: 15px;
+    
+}
+.info--title {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+
+    margin-bottom: 7px;
+}
+.info--money {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--title-1);
+}
+.info--block-img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+
+    max-width: 250px;
+}
+.info--block-img .info--title{
+    margin-bottom: 5px;
+}
+.info--subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--title-2);
+    margin-bottom: 5px;
+}
+.info--images {
+    position: absolute;
+    bottom: 10px;
+    right: 21px;
+
+    max-width: 64px;
+    max-height: 45px;
+}
+
+.info--images img{
+    border-radius: 20px;
+}
+.info--block--btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.search {
+    position: relative;
+    z-index: 1;
+    padding: 11px 0 11px 47px;
+    width: 100%;
+
+    background-color: var(--background-block);
+    border-radius: 15px;
+}
+
+.search::before{
+    content: url('../../img/svg-nosprite/search.svg');
+    position: absolute;
+    top:11px;
+    left: 11px;
+    width: 24px;
+    height: 24px;
+}
+
+.search input{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-color);
+}
