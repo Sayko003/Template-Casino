@@ -118,7 +118,25 @@
     .sidebar .footer--links li{
         max-width: 240px;
     }
+    .sidebar .footer--link{
+        max-width: 240px;
+        width: 100%;
+    }
     .sidebar{
         max-width: 320px;
+    }
+    .sidebar .footer--links{
+        margin-bottom: 10px;
+    }
+    .sidebar .social{
+        margin-bottom: 10px;
+    }
+
+    .sidebar .footer--app{
+        margin-bottom: 10px;
+    }
+    .sidebar--close{
+        top: 15px;
+        right: 15px;
     }
 }

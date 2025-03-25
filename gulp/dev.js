@@ -76,15 +76,15 @@ gulp.task('html:dev', function () {
 		// 		],
 		// 	})
 		// )
-		.pipe(
-			webpHTML({
-				extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
-				retina: {
-					1: '',
-					2: '@2x',
-				},
-			})
-		)
+		// .pipe(
+		// 	webpHTML({
+		// 		extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
+		// 		retina: {
+		// 			1: '',
+		// 			2: '@2x',
+		// 		},
+		// 	})
+		// )
 		// .pipe(
 		// 	prettier({
 		// 		tabWidth: 4,

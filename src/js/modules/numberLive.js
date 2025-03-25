@@ -32,7 +32,7 @@ function numberLive(){
             } else if(i == 5) {
                 i = 0;
             }       
-        }, 2000)
+        }, 864000)
     }
 
     function numTopOne(item){
@@ -44,7 +44,7 @@ function numberLive(){
             } else if(j == 5) {
                 j = 0;
             }       
-        }, 2000)
+        }, 864000)
     }
 
     function numTopTwo(item){
@@ -56,7 +56,7 @@ function numberLive(){
             } else if(k == 5) {
                 k = 0;
             }       
-        }, 2000)
+        }, 864000)
     }
     numberJack();
     numTopOne(numberTopOne);
