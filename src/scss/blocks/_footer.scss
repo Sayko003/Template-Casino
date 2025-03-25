@@ -3,8 +3,6 @@
 
     background-color: var(--background-block);
 }
-.footer--container {
-}
 .footer--wrapper {
     display: flex;
     justify-content: space-between;
@@ -39,7 +37,7 @@
 }
 .footer--link div {
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.929rem + 0.35vw, 1.25rem);
     color: var(--text-color);
 
     transition: color 0.2s ease-in;
@@ -63,7 +61,7 @@
 }
 .footer--app--text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.929rem + 0.35vw, 1.25rem);
     color: var(--title-2);
     margin-bottom: 30px;
 }
@@ -88,7 +86,7 @@
 
 .footer--social--text{
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.929rem + 0.35vw, 1.25rem);
     color: var(--title-2);
     margin-bottom: 20px;
 }
@@ -109,7 +107,7 @@
     margin-bottom: 40px;
 
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 0.84rem + 0.18vw, 1rem);
     color: var(--text-color);
 }
 
@@ -124,6 +122,57 @@
     margin-top: 25px;
 
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(0.875rem, 0.84rem + 0.18vw, 1rem);
     color: var(--text-color);
+}
+
+@include laptop-big {
+    .footer--wrapper{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+
+@include laptop {
+    .footer--links li{
+        width: 450px;
+        max-width: 100%;
+    }
+    .footer--socials{
+        max-width: 450px;
+        width: 100%;
+    }
+    .footer--btns{
+        flex-direction: row;
+        column-gap: 15px;
+    }
+}
+
+@include tablet {
+    .footer--links li{
+        width: 200px;
+        max-width: 100%;
+    }
+    .footer--socials{
+        max-width: 200px;
+        width: 100%;
+    }
+    .footer--btns{
+        flex-direction: column;
+        column-gap: 0;
+    }
+}
+
+@include mobile {
+    .footer{
+        padding: 30px 30px;
+    }
+    .footer--links li{
+        width: 280px;
+        max-width: 100%;
+    }
+    .footer--socials{
+        max-width: 280px;
+        width: 100%;
+    }
 }

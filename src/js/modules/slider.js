@@ -38,6 +38,31 @@ function swiperMain(){
             nextEl: '.best-games--next',
             prevEl: '.best-games--prev',
         },
+        breakpoints: {
+            320: {
+                slidesPerView: `auto`,
+                centeredSlides: true,
+                spaceBetween: 50,
+            },
+            600: {
+                slidesPerView: `auto`,
+                spaceBetween: 25,
+            },
+            960: {
+                slidesPerView: `auto`,
+                spaceBetween: 25,
+            },
+            1200: {
+                slidesPerView: `auto`,
+                spaceBetween: 10,
+            },
+            1450: {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+            }
+        },
+
+
     });
 }
 

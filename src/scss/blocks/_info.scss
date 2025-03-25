@@ -88,3 +88,35 @@
     font-size: 16px;
     color: var(--text-color);
 }
+
+@include laptop {
+    .info--wrapper{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .info--block{
+        max-width: 45%;
+    }
+
+    .info--block--btns{
+        max-width: 45%;
+        width: 100%;
+    }
+}
+
+@include mobile {
+    .info{
+        padding-top: 20px;
+    }
+    .info--wrapper{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .info--block{
+        max-width: 100%;
+    }
+    .info--block--btns{
+        max-width: 100%;
+        width: 100%;
+    }
+}

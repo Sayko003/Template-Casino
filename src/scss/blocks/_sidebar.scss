@@ -1,5 +1,7 @@
 .overlay--sidebar{
-    position: absolute;
+    display: none;
+
+    position: fixed;
     z-index: -2;
     top:0;
     left:0;
@@ -16,7 +18,7 @@
     transition: all 0.2s ease;
 }
 .sidebar{
-    position: absolute;
+    position: fixed;
     z-index: -1;
     top:0;
     left:-100%;
@@ -33,6 +35,7 @@
     transition: all 0.2s ease;
 }
 .overlay--sidebar-active{
+    display: block;
     z-index: 6;
     opacity: 1;
 }
@@ -43,7 +46,10 @@
 .sidebar .footer--links{
     margin-bottom: 40px;
 }
-
+.sidebar .footer--link{
+    width: 280px;
+    max-width: 280px;
+}
 .sidebar .footer--social{
     margin-bottom: 40px;
 }
@@ -61,7 +67,7 @@
 }
 
 
-.footer--app--text {
+.sidebar .footer--app--text {
     font-weight: 400;
     font-size: 20px;
     color: var(--title-2);
@@ -106,4 +112,13 @@
     width: 20px;
     height: 20px;
     fill: var(--title-2);
+}
+
+@include mobile {
+    .sidebar .footer--links li{
+        max-width: 240px;
+    }
+    .sidebar{
+        max-width: 320px;
+    }
 }

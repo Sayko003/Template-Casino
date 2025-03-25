@@ -35,3 +35,92 @@
     display: flex;
     column-gap: 15px;
 }
+
+.header--sidebar{
+    display: none;
+}
+
+@include laptop-big {
+    .header--container{
+        max-width: 1200px;
+    }
+    .header--btn{
+        flex-direction: column;
+        row-gap: 5px;
+    }
+    .header .btn--main-color{
+        padding: 5px 15px;
+    }
+
+    .header ul{
+        column-gap: 20px;
+    }
+
+    .header .social {
+        max-width: 180px;
+    }
+}
+
+@include laptop {
+    .header .social{
+        display: none;
+    }
+
+    .header--wrapper{
+        justify-content: space-around;
+    }
+    .header ul {
+        column-gap: 15px;
+    }
+}
+
+@include tablet {
+    .header .social{
+        display: block;
+        order: 3;
+    }
+    .header ul {
+        display: none;
+    }
+    .header--btn{
+        flex-direction: row;
+    }
+    .header .btn--main-color{
+        padding: 5px 15px;
+    }
+
+    .header--wrapper{
+        column-gap: 0;
+        justify-content: space-around;
+    }
+
+    .header--btn{
+        order: 2;
+    }
+
+    .header--sidebar{
+        max-width: 40px;
+        max-height: 40px;
+        display: block;
+        order: 4;
+    }
+
+    .icon--nav{
+        width: 40px;
+        height: 40px;
+        fill: var(--title-2);
+    }
+}
+
+@include mobile {
+    .header .social{
+        display: none;
+    }
+    .header--btn{
+        column-gap: 5px;
+    }
+
+    .header--logo{
+        max-width: 60px;
+    }
+}

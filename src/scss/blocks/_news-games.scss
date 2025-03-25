@@ -113,3 +113,65 @@
 
     transition: all 0.2s ease-in;
 }
+
+@include laptop {
+    .news-games--wrapper{
+        justify-content: flex-start;
+    }
+    .news-games--gap{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, 150px));
+    }
+}
+
+@include tablet {
+    .news-games--wrapper{
+        column-gap: 20px;
+    }
+    .news-games--gap{
+        gap: 20px;
+    }
+
+    .news-games--overlay{
+        opacity: 1;
+    }
+}
+@include mobile {
+    .news--games--arrow{
+        display: none;
+    }
+    .news-games--gap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .best-games--block{
+        padding: 20px;
+    }
+    .best-games--title{
+        margin-bottom: 0;
+    }
+    .best-games--sub{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        margin-bottom: 15px;
+    }
+    .best-games .swiper-slide, .best-games .swiper-slide-active {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .best-games--arrow {
+        z-index: 8;
+        max-width: 240px;
+        position: absolute;
+        top: 50%;
+    }
+}
+
+@media (max-width: 370px) {
+    .best-games--arrow {
+        top: 54%;
+    }
+}

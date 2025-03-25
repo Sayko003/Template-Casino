@@ -1,3 +1,21 @@
+//убрать скролл
+.no-scroll {
+	overflow-y: hidden;
+}
+//Спрятать элементы
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 //Заголовоки и текст
 .title--1 {
 	font-family: var(--font-family);
@@ -9,7 +27,7 @@
 .title--2 {
 	font-family: var(--font-family);
 	font-weight: 400;
-	font-size: 36px;
+	font-size: clamp(1.5rem, 1.288rem + 1.06vw, 2.25rem);
 	color: var(--title-2);
 }
 
@@ -30,7 +48,7 @@
 .menu--link{
 	font-family: var(--font-family);
 	font-weight: 400;
-	font-size: 20px;
+	font-size: clamp(1rem, 0.929rem + 0.35vw, 1.25rem);
 	color: var(--white);
 
 	transition: all 0.2s ease-in;
@@ -38,13 +56,13 @@
 
 .menu--link:hover{
 	color: var(--accent);
-	text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .title--slider{
 	font-family: var(--font-family);
 	font-weight: 700;
-	font-size: 48px;
+	font-size: clamp(1.625rem, 1.236rem + 1.95vw, 3rem);
 	color: var(--white);
 
 	margin-bottom: 16px;
@@ -53,7 +71,7 @@
 .subtitle--slider{
 	font-family: var(--font-family);
 	font-weight: 400;
-	font-size: 24px;
+	font-size: clamp(1.125rem, 1.019rem + 0.53vw, 1.5rem);
 	color: var(--white);
 
 	margin-bottom: 30px;
@@ -66,7 +84,7 @@
 	padding: 10px 35px;
 
 	font-weight: 400;
-	font-size: 20px;
+	font-size: clamp(1rem, 0.929rem + 0.35vw, 1.25rem);
 	color: var(--white);
 
 	border: 2px solid transparent;
@@ -83,7 +101,7 @@
 	padding: 10px 35px;
 
 	font-weight: 400;
-	font-size: 20px;
+	font-size: clamp(1rem, 0.929rem + 0.35vw, 1.25rem);
 	color: var(--accent);
 
 	border: 2px solid var(--accent);

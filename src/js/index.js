@@ -1,7 +1,13 @@
 import swiperMain from "./modules/slider";
 import sideBar from "./modules/sidebar";
+import numberLive from "./modules/numberLive";
 document.addEventListener(`DOMContentLoaded`, () =>{
-    swiperMain();
+    try{
+        swiperMain();
 
-    sideBar();
+        sideBar();
+
+        numberLive();
+    } catch(e){}
+    
 });

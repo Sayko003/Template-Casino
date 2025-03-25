@@ -39,16 +39,18 @@ function sideBar(){
     //Проверка есть ли паддинг у body
     function paddingBody(){
         const widthScroll = getScrollBarWidth();
-
-        if(bodyPadding.paddingRight === `${widthScroll}px`){
+        if(window.innerWidth > 959){
+            if(bodyPadding.paddingRight === `${widthScroll}px`){
             overflow.style.paddingRight = `0px`;
             overflow.style.overflow = `auto`;
             header.style.paddingRight = `0px`;
-        } else {
-            overflow.style.paddingRight = `${widthScroll}px`;
-            overflow.style.overflow = `hidden`;
-            header.style.paddingRight = `${widthScroll}px`;
+            } else {
+                overflow.style.paddingRight = `${widthScroll}px`;
+                overflow.style.overflow = `hidden`;
+                header.style.paddingRight = `${widthScroll}px`;
+            }
         }
+        
     }
 
     function toggleClass(){
