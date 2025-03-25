@@ -13,7 +13,11 @@
     width: 100%;
     background: var(--background-block);
     border-radius: 15px;
-    
+    opacity: 1;
+    transition: all 0.2s ease-in;
+}
+.info--block:hover{
+    opacity: 0.8;
 }
 .info--title {
     font-weight: 400;
